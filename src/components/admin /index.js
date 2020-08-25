@@ -21,9 +21,9 @@ const Admin = () => {
     <div>
       <h1>A qui se vera el entorno de la administracion y empleados</h1>
 
-      {users.map((user) => (
-        <div key={user.uid}>
-          {user.email}-rol{user.rol}
+      {users.map((usuario) => (
+        <div key={usuario.uid}>
+          {usuario.email}-rol{usuario.rol}
         </div>
       ))}
     </div>
