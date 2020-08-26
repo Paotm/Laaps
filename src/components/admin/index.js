@@ -11,20 +11,36 @@ const Admin = () => {
   const fetchUsers = async () => {
     try {
       const res = await db.collection("users").get();
-      setUsers(res.docs.map((doc) => doc.data));
+      setUsers(res.docs.map((doc) => doc.data()));
     } catch (error) {
       console.log(error);
     }
   };
+  console.log(users);
+
+  const administrator = (email) => {
+    if (!email.trim()) {
+      return console.log("email vacio");
+    }
+
+    const addRol = functions.httpsCallable;
+  };
 
   return (
     <div>
-      <h1>A qui se vera el entorno de la administracion y empleados</h1>
+      <h1>Usuarios que han visitado la aplicaciion</h1>
 
-      {users.map((user) => (
-        <div key={user.uid}>
-          {user.email}-rol{user.rol}
-        </div>
+      {users.map((usuario) => (
+        <>
+          <div key={usuario.uid}>
+            Usuario: {usuario.email} - rol: {usuario.rol}
+          </div>
+          <div>
+            <button onClick={() => administrator(usuario.email)}>
+              Administrador{" "}
+            </button>
+          </div>
+        </>
       ))}
     </div>
   );
