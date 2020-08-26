@@ -1,3 +1,4 @@
+import style from "./style.module.css"
 import React, { useState } from "react";
 
 const OrderCarwash = (props) => {
@@ -27,7 +28,7 @@ const OrderCarwash = (props) => {
     <div>
       <form onSubmit={handleSubmit}>
         <div>
-          <input
+          <input className={style.form}
             type="text"
             placeholder="Marca del auto"
             name="Marca"

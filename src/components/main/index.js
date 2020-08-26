@@ -1,31 +1,29 @@
 import React from "react";
 import BotonImage from "../botonImage/index.js";
 import style from "./style.module.css"
-import usuario from "../../images/usuario.svg";
-import coche from "../../images/coche.svg";
 import titulo from "../../images/titulo.png";
 import logo from "../../images/logo.png";
-import registro from "../../images/registro.png";
-import usuarios from "../../images/usuarios.png";
+import user from "../../images/user.svg";
+import team from "../../images/team.svg";
 
 
 const Main = () => {
   return (
     <>
-      
-       <header>
-       <div className={style.logotipo}><img src={logo} alt="logo" className={style.logo}/></div>
-       <div className={style.tituloC}><img src={titulo} alt="titulo" className={style.titulo}/></div>
-       </header>
-      
+
+      <header>
+        <div className={style.logotipo}><img src={logo} alt="logo" className={style.logo} /></div>
+        <div className={style.tituloC}><img src={titulo} alt="titulo" className={style.titulo} /></div>
+      </header>
+
       <main>
-      <div className={style.registroC}><BotonImage image={registro} adress="/users" /></div>
-      <h2>Eres Usuario</h2>
-      <div className={style.usuariosC}><BotonImage image={usuarios} adress="/users" /></div>
-      <h2>Equipo Laaps</h2>
+        <div className={style.registroC}><BotonImage image={user} adress="/users" /></div>
+        <p>Usuario</p>
+        <div className={style.usuariosC}><BotonImage image={team} adress="/admin" /></div>
+        <p>Equipo Laaps</p>
       </main>
-      
-      
+
+
     </>
   );
 };
