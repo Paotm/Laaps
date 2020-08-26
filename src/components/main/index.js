@@ -1,20 +1,25 @@
 import React from "react";
 import BotonImage from "../botonImage/index.js";
 
-import usuario from "../../images/usuario.svg";
-import coche from "../../images/coche.svg";
+import Vector from "../../images/Vector.svg";
+import empleados from "../../images/empleados.svg";
+import Laapslogo from "../../images/Laapslogo.svg";
+
 
 const Main = () => {
   return (
     <>
       <div>
-        <h1>Laaps</h1>
+        <img className="logo" src={Laapslogo} />
+
       </div>
       <div>
-        <BotonImage image={usuario} adress="/users" />
+        <BotonImage image={Vector} adress="/users" />
+        <p>Usuario</p>
       </div>
       <div>
-        <BotonImage image={coche} adress="/admin" />
+        <BotonImage image={empleados} adress="/admin" />
+        <p>Laaps Team</p>
       </div>
     </>
   );

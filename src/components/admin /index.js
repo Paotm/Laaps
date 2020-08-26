@@ -19,7 +19,7 @@ const Admin = () => {
 
   return (
     <div>
-      <h1>A qui se vera el entorno de la administracion y empleados</h1>
+      <h1>Bienvenido</h1>
 
       {users.map((user) => (
         <div key={user.uid}>
