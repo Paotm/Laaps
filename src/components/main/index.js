@@ -24,7 +24,7 @@ const Main = () => {
         </div>
         <h2>Eres Usuario</h2>
         <div className={style.usuariosC}>
-          <BotonImage image={usuarios} adress="/users" />
+          <BotonImage image={usuarios} adress="/admin" />
         </div>
         <h2>Equipo Laaps</h2>
       </main>
