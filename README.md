@@ -48,5 +48,5 @@ Y por otro lado, que la webapp le permita a la directora y al equipo de ventas (
 
 ## 5. App
 
-Para acceder a la app visitanos ![aqui](https://laaps.vercel.app/)
+Para acceder a la app visitanos [aqui](https://laaps.vercel.app/)
 
