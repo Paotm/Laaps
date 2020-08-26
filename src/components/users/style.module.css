@@ -1,15 +1,86 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 30px;
+}
+
 .button {
   color: #ffffff;
-  background: blue;
+  background: #2c98f0;
   border: 1px solid #ffffff;
   border-radius: 6px;
   padding: 5px;
   color: rgb(56, 57, 58);
-  text-decoration: none;
-  width: 150px;
+    width: 150px;
 }
 
 .button:hover {
-  /* prueba */
   opacity: 0.8;
+}
+
+header {
+  display: flex;
+}
+
+.logotipo {
+  margin-top: 20px;
+}
+
+.logotipo img {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.tituloC {
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.tituloC img {
+  width: 120px;
+}
+
+main {
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.registroC img {
+  width: 50px;
+}
+
+.usuariosC img {
+  width: 50px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: rgb(91, 91, 94);
+}
+
+.loginC{
+  margin-top: 30px
+}
+
+
+
+.google {
+  width: 35px;
+}
+
+p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(91, 91, 94);
 }
