@@ -25,7 +25,6 @@ Consumimos 40-50 litros por lavar a cubetadas o lavado a presión por vehículo.
 Carwash convencional puede gastar hasta 70 litros de agua.
 
 ## 2. ¿Qué es Laaps?
-
 ![laaps](public/images/Laaps.png)
 
 Laaps un emprendimiento dedicado al lavado de autos a domicilio sin utilizar agua.
@@ -41,7 +40,8 @@ Se necesita diseñar y desarrollar una webapp (tipo Uber) a través de la cual l
 
 Y por otro lado, que la webapp le permita a la directora y al equipo de ventas (como administradoras) conocer los detalles de su negocio más amplia y detalladamente para así poder analizar y tomar decisiones sobre este. 
 
-4. Prototipo
+## 4. Prototipo
+
 ![Prototipo1](public/images/prototipo1.png)  ![Prototipo2](public/images/prototipo2.png)
 ![Prototipo3](public/images/prototipo3.png)  ![Prototipo4](public/images/prototipo4.png)
 ![Prototipo5](public/images/prototipo5.png)  ![Protoripo6](public/images/prototipo6.png)
