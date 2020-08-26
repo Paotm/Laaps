@@ -1,0 +1,43 @@
+header{
+    display: flex;
+}
+
+.logotipo{
+    margin-top:20px;
+}
+
+.logotipo img{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.tituloC{
+    margin-left: 10%;
+    margin-top:30px;
+
+}
+.tituloC img{
+    width: 120px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.registroC  img{
+width: 50px;
+}
+
+.usuariosC img{
+    width: 50px;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(91, 91, 94);
+}
