@@ -7,12 +7,16 @@ import Admin from "./components/admin/index.js";
 import RegisterUser from "./components/registerUser/index.js";
 import OrderCarwash from "./components/orderCarwash/index.js";
 import ServicesWash from "./components/ServicesWash/index.js";
+import UserProfile from "./components/userProfile/index.js";
 
 function App() {
   return (
     <Router>
       <div>
         <Switch>
+          <Route path="/userProfile">
+            <UserProfile />
+          </Route>
           <Route path="/users">
             <Users />
           </Route>

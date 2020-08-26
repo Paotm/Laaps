@@ -20,7 +20,7 @@ const Main = () => {
 
       <main>
         <div className={style.registroC}>
-          <BotonImage image={registro} adress="/users" />
+          <BotonImage image={registro} adress="/userProfile" />
         </div>
         <h2>Eres Usuario</h2>
         <div className={style.usuariosC}>

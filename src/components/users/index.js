@@ -30,12 +30,6 @@ const Users = () => {
           <img src={login} alt="login" className={styles.login} />
         </div>
 
-        <div>
-          <Link to="/registerUser">
-            <button className={styles.button}>Registrarse</button>
-          </Link>
-        </div>
-
         <div classNam={styles.googleC}>
           <div>
             <Link to="/orderCarwash">
