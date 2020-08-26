@@ -17,9 +17,9 @@ const Main = () => {
       </header>
 
       <main>
-        <div className={style.registroC}><BotonImage image={user} adress="/users" /></div>
+        <div className={style.userC}><BotonImage image={user} adress="/users" /></div>
         <p>Usuario</p>
-        <div className={style.usuariosC}><BotonImage image={team} adress="/admin" /></div>
+        <div className={style.teamC}><BotonImage image={team} adress="/admin" /></div>
         <p>Equipo Laaps</p>
       </main>
 
