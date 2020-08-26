@@ -48,6 +48,7 @@ const ShowNotes = () => {
               <h5> Auto {service.Marca}</h5>
               <h5>Color {service.Color} </h5>
               <h5>Placas {service.Placas}</h5>
+              <h5>Total $130.00</h5>
             </div>
           ))}
         </div>
