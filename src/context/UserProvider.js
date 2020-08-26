@@ -1,5 +1,6 @@
 import React from "react";
 import { auth, db, firebase } from "../firebase.js";
+import { Router } from "react-router-dom";
 
 export const UserContext = React.createContext();
 
@@ -20,8 +21,10 @@ const UserProvider = (props) => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         console.log("exise", user);
+
         user.getIdTokenResult().then((idTokenResult) => {
-          console.log(idTokenResult);
+          console.log(idTokenResult.claims);
+
           if (!!idTokenResult.claims.admin) {
             console.log("Es administrador");
             setUser({
@@ -64,6 +67,7 @@ const UserProvider = (props) => {
     try {
       const provider = new firebase.auth.GoogleAuthProvider();
       const res = await auth.signInWithPopup(provider);
+
       const existe = await db.collection("users").doc(res.user.email).get();
 
       if (!existe.exists) {

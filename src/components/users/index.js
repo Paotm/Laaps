@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import styles from "./style.module.css";
 
 import { UserContext } from "../../context/UserProvider.js";
 
 const Users = () => {
+  const history = useHistory();
+
   const { usuario, LogIn, closeSesion } = React.useContext(UserContext);
+
   return (
     <>
       <div>
@@ -14,9 +17,11 @@ const Users = () => {
         </Link>
       </div>
       <div>
-        <button className={styles.button} onClick={LogIn}>
-          Login
-        </button>
+        <Link to="/orderCarwash">
+          <button className={styles.button} onClick={LogIn}>
+            Login
+          </button>
+        </Link>
       </div>
       <div>
         <button className={styles.button} onClick={closeSesion}>
