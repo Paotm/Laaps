@@ -24,13 +24,9 @@ const Users = () => {
         </Link>
       </div>
       <div>
-        <button className={styles.button} onClick={closeSesion}>
+        {/* <button className={styles.button} onClick={closeSesion}>
           Cerrar Sesion
-        </button>
-      </div>
-
-      <div>
-        <span>Cliente</span>
+  </button>*/}
       </div>
     </>
   );
