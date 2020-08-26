@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import OrderCarwash from "../orderCarwash/index.js";
 import { db } from "../../firebase.js";
 
+import styles from "./style.module.css";
+import logo from "../../images/logo.png";
+import titulo from "../../images/titulo.png";
+
 const ShowNotes = () => {
   const [notes, setNotes] = useState([]);
   const addTask = async (noteObject) => {
@@ -25,17 +29,28 @@ const ShowNotes = () => {
 
   return (
     <>
-      <div>
-        <OrderCarwash addTask={addTask} />
-      </div>
-      <div>
-        {notes.map((service) => (
-          <div>
-            <h4>{service.Marca}</h4>
-            <h5>{service.Color}</h5>
-            <p>{service.Placas}</p>
+      <div className={styles.Container}>
+        <header>
+          <div className={styles.logotipo}>
+            <img src={logo} alt="logo" className={styles.logo} />
           </div>
-        ))}
+          <div className={styles.tituloC}>
+            <img src={titulo} alt="titulo" className={styles.titulo} />
+          </div>
+        </header>
+        <div>
+          <OrderCarwash addTask={addTask} />
+        </div>
+        <div className={styles.serviceWash}>
+          {notes.map((service) => (
+            <div>
+              <h4>El car wash sera para el</h4>
+              <h5> Auto {service.Marca}</h5>
+              <h5>Color {service.Color} </h5>
+              <h5>Placas {service.Placas}</h5>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

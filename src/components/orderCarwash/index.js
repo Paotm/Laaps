@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./style.module.css";
 
 const OrderCarwash = (props) => {
   const initialStateValues = {
@@ -34,6 +35,7 @@ const OrderCarwash = (props) => {
             onChange={handleInputChange}
             //con esto reiniciamos los valores
             value={values.Marca}
+            className={styles.input}
           />
         </div>
         <div>
@@ -44,6 +46,7 @@ const OrderCarwash = (props) => {
             onChange={handleInputChange}
             //con esto reiniciamos los valores
             value={values.Color}
+            className={styles.input}
           />
         </div>
         <div>
@@ -54,11 +57,12 @@ const OrderCarwash = (props) => {
             onChange={handleInputChange}
             //con esto reiniciamos los valores
             value={values.Placas}
+            className={styles.input}
           />
         </div>
 
         <div>
-          <button>Solicitar</button>
+          <button className={styles.button}>Solicitar</button>
         </div>
       </form>
     </div>

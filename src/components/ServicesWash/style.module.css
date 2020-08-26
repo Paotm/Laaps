@@ -6,23 +6,6 @@
   justify-content: space-around;
 }
 
-.button {
-  color: #ffffff;
-  background: #2c98f0;
-  border: 1px solid #ffffff;
-  border-radius: 20px;
-  padding: 5px;
-  color: rgb(56, 57, 58);
-  text-decoration: none;
-  width: 150px;
-  color: #ffffff;
-  height: 40px;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
 header {
   display: flex;
   height: 200px;
@@ -45,7 +28,8 @@ header {
   width: 120px;
 }
 
-.login {
-  justify-self: center;
-  height: 200px;
+.serviceWash {
+  border-style: dashed;
+  border-color: blue;
+  width: 200px;
 }

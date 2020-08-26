@@ -32,7 +32,7 @@ const Users = () => {
 
         <div classNam={styles.googleC}>
           <div>
-            <Link to="/orderCarwash">
+            <Link to="/serviceWash">
               <img
                 src={google}
                 alt="google"

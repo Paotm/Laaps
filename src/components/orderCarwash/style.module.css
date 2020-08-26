@@ -1,0 +1,20 @@
+.button {
+  color: #ffffff;
+  background: #2c98f0;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  color: rgb(56, 57, 58);
+  text-decoration: none;
+  width: 150px;
+  color: #ffffff;
+  height: 40px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.input {
+  border-color: #2c98f0;
+}
