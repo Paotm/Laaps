@@ -1,6 +1,19 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-style: dotted;
+  align-items: center;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+}
+
 .button {
   color: #ffffff;
-  background: blue;
+  background: #2c98f0;
   border: 1px solid #ffffff;
   border-radius: 6px;
   padding: 5px;
@@ -10,6 +23,63 @@
 }
 
 .button:hover {
-  /* prueba */
   opacity: 0.8;
+}
+
+header {
+  display: flex;
+}
+
+.logotipo {
+  margin-top: 20px;
+}
+
+.logotipo img {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.tituloC {
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.tituloC img {
+  width: 120px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.registroC img {
+  width: 50px;
+}
+
+.usuariosC img {
+  width: 50px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(91, 91, 94);
+}
+
+.loginC {
+  height: 250px;
+}
+
+.googleC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
+.google {
+  width: 35px;
 }
